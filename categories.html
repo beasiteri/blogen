@@ -14,136 +14,138 @@
 </head>
 
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar bg-dark navbar-expand-sm navbar-dark p-0">
-        <div class="container">
-            <a href="index.html" class="navbar-brand">Blogen</a>
-            <button class="navbar-toggler" data-toggler="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav">
-                    <li class="nav-item px-2"><a href="index.html" class="nav-link">Dashboard</a></li>
-                    <li class="nav-item px-2"><a href="posts.html" class="nav-link">Posts</a></li>
-                    <li class="nav-item px-2"><a href="categories.html" class="nav-link active">Categories</a></li>
-                    <li class="nav-item"><a href="users.html" class="nav-link">Users</a></li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown mr-3">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                            <i class="fas fa-user"></i> Welcome Brad</a>
-                        <div class="dropdown-menu">
-                            <a href="profile.html" class="dropdown-item"><i class="fas fa-user-circle"></i> Profile</a>
-                            <a href="settings.html" class="dropdown-item"><i class="fas fa-cog"></i> Settings</a>
-                        </div>
-                    </li>
-                    <li class="nav-item"><a href="login.html" class="nav-link"><i class="fas fa-user-times"></i>
-                            Logout</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- HEADER -->
-    <header id="main-header" class="bg-success py-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h1 class="text-white"><i class="fas fa-folder"></i> Categories</h1>
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav class="navbar bg-dark navbar-expand-sm navbar-dark p-0">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">Blogen</a>
+                <button class="navbar-toggler" data-toggler="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-2"><a href="index.html" class="nav-link">Dashboard</a></li>
+                        <li class="nav-item px-2"><a href="posts.html" class="nav-link">Posts</a></li>
+                        <li class="nav-item px-2"><a href="categories.html" class="nav-link active">Categories</a></li>
+                        <li class="nav-item"><a href="users.html" class="nav-link">Users</a></li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown mr-3">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                <i class="fas fa-user"></i> Welcome Brad</a>
+                            <div class="dropdown-menu">
+                                <a href="profile.html" class="dropdown-item"><i class="fas fa-user-circle"></i>
+                                    Profile</a>
+                                <a href="settings.html" class="dropdown-item"><i class="fas fa-cog"></i> Settings</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="login.html" class="nav-link"><i class="fas fa-user-times"></i>
+                                Logout</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </header>
+        </nav>
 
-    <!-- SEARCH -->
-    <section id="search" class="py-4 mb-4 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 ml-auto">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search Posts...">
-                        <div class="input-group-append">
-                            <button class="btn btn-success">Search</button>
+        <!-- HEADER -->
+        <header id="main-header" class="bg-success py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="text-white"><i class="fas fa-folder"></i> Categories</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- SEARCH -->
+        <section id="search" class="py-4 mb-4 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 ml-auto">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search Posts...">
+                            <div class="input-group-append">
+                                <button class="btn btn-success">Search</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CATEGORIES -->
-    <section id="categories">
-        <div class="container mb-4">
-            <div class="row">
-                <div class="col">
-                    <class class="card">
-                        <div class="card-header">
-                            <h4>Latest Posts</h4>
-                        </div>
-                        <div class="carde-body">
-                            <table class="table table-striped">
-                                <thead class="thead-dark">
-                                    <tr>
-                                        <th>#</th>
-                                        <th>Title</th>
-                                        <th>Date</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Post One</td>
-                                        <td>May 10 2018</td>
-                                        <td><a href="details.html" class="btn btn-secondary"><i
-                                                    class="fas fa-angle-double-right"></i> Details</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Post Two</td>
-                                        <td>May 11 2018</td>
-                                        <td><a href="details.html" class="btn btn-secondary"><i
-                                                    class="fas fa-angle-double-right"></i> Details</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Post Three</td>
-                                        <td>May 13 2018</td>
-                                        <td><a href="details.html" class="btn btn-secondary"><i
-                                                    class="fas fa-angle-double-right"></i> Details</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Post Four</td>
-                                        <td>May 15 2018</td>
-                                        <td><a href="details.html" class="btn btn-secondary"><i
-                                                    class="fas fa-angle-double-right"></i> Details</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </class>
+        <!-- CATEGORIES -->
+        <section id="categories">
+            <div class="container mb-4">
+                <div class="row">
+                    <div class="col">
+                        <class class="card">
+                            <div class="card-header">
+                                <h4>Latest Posts</h4>
+                            </div>
+                            <div class="carde-body">
+                                <table class="table table-striped">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Title</th>
+                                            <th>Date</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Post One</td>
+                                            <td>May 10 2018</td>
+                                            <td><a href="details.html" class="btn btn-secondary"><i
+                                                        class="fas fa-angle-double-right"></i> Details</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Post Two</td>
+                                            <td>May 11 2018</td>
+                                            <td><a href="details.html" class="btn btn-secondary"><i
+                                                        class="fas fa-angle-double-right"></i> Details</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Post Three</td>
+                                            <td>May 13 2018</td>
+                                            <td><a href="details.html" class="btn btn-secondary"><i
+                                                        class="fas fa-angle-double-right"></i> Details</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Post Four</td>
+                                            <td>May 15 2018</td>
+                                            <td><a href="details.html" class="btn btn-secondary"><i
+                                                        class="fas fa-angle-double-right"></i> Details</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </class>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- FOOTER -->
-    <footer id="main-footer" class="bg-dark text-white p-5 mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <p class="lead text-center">Copyright &copy; <span id="year"></span> Blogen</p>
+        <!-- FOOTER -->
+        <footer id="main-footer" class="bg-dark text-white p-5 mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p class="lead text-center">Copyright &copy; <span id="year"></span> Blogen</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-
+        </footer>
+    </div>
 
 
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"
